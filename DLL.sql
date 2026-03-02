@@ -18,3 +18,32 @@ CREATE TABLE categories(
 	id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	name VARCHAR(120) NOT NULL
 )
+
+CREATE TABLE products (
+	id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	supplier_id INT NOT NULL,
+	category_id INT NOT NULL,
+	name VARCHAR(120) NOT NULL,
+	sku VARCHAR(60) NOT NULL,
+	price INT NOT NULL,
+	FOREIGN KEY (supplier_id) REFERENCES suppliers(id),
+	FOREIGN KEY (category_id) REFERENCES categories(id)
+)
+
+CREATE TABLE orders(
+	id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	customer_id INT NOT NULL,
+	date TIMESTAMP NOT NULL,
+	total_order INT NOT NULL,
+	FOREIGN KEY (customer_id) REFERENCES costumers(id)
+)
+
+CREATE TABLE orders_products(
+	id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	order_id INT NOT NULL,
+	product_id INT NOT NULL,
+	quantity INT NOT NULL,
+	total_product INT NOT NULL,
+	FOREIGN KEY (order_id) REFERENCES orders(id),
+	FOREIGN KEY (product_id) REFERENCES products(id)
+)
