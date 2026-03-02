@@ -1,11 +1,13 @@
 const sql = require("mysql2");
 
+require("dotenv").config();
+
 const connection = sql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "mymegastoredatabase",
-  database: "megastore",
-  port: "3310",
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASS,
+  database: process.env.DB_DATABASE,
+  port: process.env.DB_PORT,
 });
 
 connection.connect((error) => {
