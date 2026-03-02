@@ -1,0 +1,22 @@
+{
+  "name": "megastore-global",
+  "version": "1.0.0",
+  "description": "MegaStore Glabal if facing one big administrative crisis, they group all their data into a massive Excel, making it unorganize and inefficient.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "csv-parse": "^6.1.0",
+    "express": "^5.2.1",
+    "multer": "^2.1.0",
+    "mysql2": "^3.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
