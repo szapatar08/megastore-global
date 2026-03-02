@@ -4,7 +4,7 @@ const uploadsRouter = require("./routes/uploads.route");
 
 const app = express();
 
-app.use("/api", uploadsRouter);
+app.use("/api/upload", uploadsRouter);
 
 mongoose
   .connect(

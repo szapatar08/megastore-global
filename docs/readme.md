@@ -18,7 +18,17 @@ First of all we have to inizialize the MySQL database in the server. For that we
 ```
   docker run --name megastore-global -p 3310:3306 -e MYSQL_ROOT_PASSWORD=mymegastoredatabase -d mysql
 ```
-Open your prefered database manager tool and run the commands store in the file `DLL.sql`.
+Open your prefered database manager tool and run the commands store in the file `DDL.sql`.
 
 ### And what about the MongoDB?
 In this case we use an Atlas MongoDB Database that is store on the web, just have to make sure that your IP is on the list in the MongoDB Atlas website.
+
+## Guide to the API
+### Uploads
+To upload a new file through a .CSV file you must know some important endpoints, all of this endpoints and made to make POST requests.:
+- To upload data to the customers table you must follow this endpoint: `/api/upload/customers`.
+- To upload data to the suppliers table you must follow this endpoint: `/api/upload/suppliers`.
+- To upload data to the categories table you must follow this endpoint: `/api/upload/categories`.
+- To upload data to the products table you must follow this endpoint: `/api/upload/products`.
+- To upload data to the orders table you must follow this endpoint: `/api/upload/orders`.
+- To upload data to the orders_products table you must follow this endpoint: `/api/upload/orders_products`.

@@ -1,0 +1,22 @@
+id,supplier_id,category_id,name,sku,price
+1,1,1,Laptop HP Pavilion 15,LPT-HP-001,3500000
+2,2,2,Mouse Logitech G203,MSE-LOG-001,120000
+3,2,2,USB Kingston 64GB,USB-KIN-64,45000
+4,3,3,Silla Ergonomica Office,CHR-ERG-005,450000
+5,1,1,Monitor Samsung 24,MON-SAM-24,600000
+6,4,2,Teclado Mecanico Redragon,KBD-MEC-002,250000
+7,3,3,Escritorio Estandar Blanco,DSK-STD-100,320000
+8,5,3,Lampara LED Escritorio,LMP-LED-001,80000
+9,6,2,Audifonos Sony WH-1000,HDP-SNY-005,1200000
+10,1,1,iPad Air 64GB,TAB-APP-009,2800000
+11,2,2,Funda iPad Air,CS-TAB-009,90000
+12,1,1,Monitor LG 27 UltraGear,MON-LG-27,1100000
+13,7,2,Cable HDMI 2.0 3m,CBL-HDMI-003,35000
+14,3,3,Sofa Cama Gris,SF-LIV-002,1500000
+15,8,1,Impresora Epson EcoTank,PRT-EPS-004,950000
+16,9,4,Resma Papel Carta 500,PPR-RSM-500,25000
+17,6,1,Parlante JBL Flip 6,SPK-JBL-005,550000
+18,10,5,Cafetera Oster 12 Tazas,CFT-OST-001,180000
+19,10,5,Batidora Inmersion,BTR-IMU-002,120000
+20,6,1,Microfono Shure SM58,MIC-SHR-058,450000
+21,9,4,Marcadores Sharpie x12,MKR-SHR-012,35000
