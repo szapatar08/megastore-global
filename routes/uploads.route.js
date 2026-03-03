@@ -10,7 +10,7 @@ const {
 } = require("../controllers/uploads.controller");
 
 const router = express.Router();
-const upload = multer({ dest: "../uploads/" });
+const upload = multer({ dest: "./uploads/" });
 
 router.post("/customers", upload.single("file"), customers);
 router.post("/suppliers", upload.single("file"), suppliers);
