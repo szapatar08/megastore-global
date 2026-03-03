@@ -32,3 +32,11 @@ To upload a new file through a .CSV file you must know some important endpoints,
 - To upload data to the products table you must follow this endpoint: `/api/upload/products`.
 - To upload data to the orders table you must follow this endpoint: `/api/upload/orders`.
 - To upload data to the orders_products table you must follow this endpoint: `/api/upload/orders_products`.
+
+### Orders
+You can create, read, update and delete and order if you want, here are the endpoints:
+- To read all the orders use a GET request to this endpoint: `http://localhost:3000/api/orders/`
+- To read just one order use a GET request to this endpoint, adding the id where says id: `http://localhost:3000/api/orders/:id`
+- To create a new order use a POST request to this endpoint, add as a JSON request the `cortumer_id` of the customer how's doing the order, also the `product_id` and the `quantity` of that product: `http://localhost:3000/api/orders/`
+- To delete an order use a DELETE request to this endpoint, adding the id where says id: `http://localhost:3000/api/orders/:id`
+- To update an order use a PUT request to this endpoint, adding the id where says id, the column want to change and its value: `http://localhost:3000/api/orders/:id/:column/:value`
