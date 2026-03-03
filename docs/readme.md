@@ -40,3 +40,21 @@ You can create, read, update and delete and order if you want, here are the endp
 - To create a new order use a POST request to this endpoint, add as a JSON request the `cortumer_id` of the customer how's doing the order, also the `product_id` and the `quantity` of that product: `http://localhost:3000/api/orders/`
 - To delete an order use a DELETE request to this endpoint, adding the id where says id: `http://localhost:3000/api/orders/:id`
 - To update an order use a PUT request to this endpoint, adding the id where says id, the column want to change and its value: `http://localhost:3000/api/orders/:id/:column/:value`
+### Queries
+In this case the cliend ask for three specific queries:
+- suppliers_analisis: List all the suppliers ranked by how much their products have sell, it uses a GET request in this endpoint: `http://localhost:3000/api/queries/suppliers_analisis`
+- client_analisis: Shows all the purchases made by an specific user, it uses a POST request add as a JSON request the `id` of the customer to the following endpoint: `http://localhost:3000/api/queries/client_analisis`
+- best_products_category: Rank the products of a specific category by its sells it uses a POST request add as a JSON request the `id` of the category to the following endpoint: `http://localhost:3000/api/queries/best_products_category`
+
+## Node dependencies
+Use this command to install all the require node dependencies:
+```
+  npm i csv-parse dotenv express mongoose multer mysql2
+```
+
+And install nodemon as a dev dependency with this command:
+```
+  npm install --save-dev nodemon
+```
+
+Installing all of this the program should run as expected.
